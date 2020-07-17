@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Order Form</title>
+<style>
+table{
+font-size:20px;
+align:left;
+}
+input[type="text"],input[type="email"],input[type="radio"],input[type="select"]
+{
+border:none;
+border-bottom:2px solid black;
+height:30px;
+font-size:25px;
+background:transparent;
+font-size:15px;
+color:black;
+}
+input[type="submit"]
+{
+border-radius:10px;
+border:none;
+background:black;
+color:white;
+font-size:25px;
+height:30px;
+}
+input[type="reset"]
+{
+border-radius:10px;
+border:none;
+background:black;
+color:white;
+font-size:25px;
+height:30px;
+}
+body{
+background-size:cover;
+color:black;
+}
+</style>
+</head>
+<body background=static/a14.jpeg><center>
+<h1>Add Detail"s for Order : </h1>
+<form action="send_sms.php" method="get">
+<table cellpadding=5px cellspacing=5px>
+<tr>
+<td>Enter Product Name:</td>
+<td><input type=text name="gt"></td>
+</tr>
+<tr>
+<td>Enter name :</td>
+<td><input type=text name="nm7" required></td>
+</tr>
+<tr>
+<td>Enter Address :</td>
+<td><input type=text name="nm2" required maxlength="50"</td>
+</tr>
+<tr>
+<td>Enter Phone no :</td>
+<td><input type=text name="nm3" required></td>
+</tr>
+<tr>
+<td>Enter Email:</td>
+<td><input type=email name="nm4" required></td>
+</tr>
+<tr>
+<td>Select color :</td><td><select name="color[]" multiple size=5 required>
+<option name=a1 value="red">Red</option>
+<option name=a2 value="Blue">Blue</option>
+<option name=a3 value="Black">Black</option>
+<option name=a4 value="White">White</option>
+<option name=a5 value="Gold">Gold</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Select payment Mode</td>
+<td><input type=radio name="nm1"value="Cash on Delivery">Cash on Delivery</td></tr>
+<tr>
+<td><input type=radio name="nm1" value="Credit Card">Credit Card</td>
+</tr><tr>
+<td><input type=radio name="nm1" value="Mobile Banking">Mobile Banking</td>
+</tr>
+<tr>
+<td><input type=Submit value="Order" name="nm8" ></td>
+<td><input type=Reset name=nm9 ></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
